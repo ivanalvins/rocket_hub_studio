@@ -1,0 +1,2541 @@
+html{
+    width: 100%;
+}
+
+body{
+    font-family: font36377;
+    letter-spacing: 0.15em;
+    background-color: black;
+    z-index: 1;
+}
+
+/*Comienza Padding*/
+
+/*Termina Padding*/
+
+
+/*Comienza HR*/
+hr.small{
+    background-color: white;
+    height: 2px;
+    width: 30px;
+    float: left;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+hr.yellow{
+    background-color: #FEFC09;
+    height: 2px;
+    width: 30px;
+    float: left;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+hr.small-center{
+    background-color: white;
+    height: 2px;
+    width: 30px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+hr.small-black{
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+hr.small-black-left{
+    background-color: black;
+    height: 2px;
+    width: 30px;
+    float: left;
+    padding-top: 0;
+    margin-top: 0;
+}
+/*Termina HR*/
+
+/*Comienza Fonts*/
+h1.light{
+    font-size: 2.5em;
+    letter-spacing: .20em;
+    line-height: 1.5em;
+    color: white;
+    font-weight: lighter;
+}
+
+h1.black{
+    font-size: 2.5em;
+    letter-spacing: .20em;
+    line-height: 1.5em;
+    color: black;
+    font-weight: lighter;
+}
+
+h2{
+    font-size: 1.5em;
+    letter-spacing: .20em;
+    line-height: 1.5em;
+    font-weight: lighter;
+}
+
+h5{
+    font-weight: 100;
+    line-height: 2;
+}
+
+.white{
+    color: white;
+}
+
+.black{
+    color: black;
+}
+
+a.white:hover {
+    color: white;
+    text-decoration: underline;
+}
+/*Termina Fonts*/
+
+/*Comienza Nav*/
+
+/*Comienza Hamburger*/
+.c-hamburger--htx {
+  background-color: #ed2213;
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  background-color: #ed2213;
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
+.c-hamburger span {
+    display: block;
+    position: absolute;
+    margin-top: 7px;
+    top: 32%;
+    left: 24%;
+    right: 25%;
+    height: 7%;
+    background: white;
+    margin-bottom: -13px;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -10px;
+}
+
+.c-hamburger span::after {
+  bottom: -10px;
+}
+
+.c-hamburger {
+    position: relative;
+    overflow: hidden;
+    margin-left: -1px;
+    margin-top: -1px;
+    right: 0px;
+    left: 15px;
+    top: 0px;
+    padding: 0;
+    width: 52px;
+    height: 52px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+/*Termina Hamburger*/
+
+
+
+
+
+.navbar-toggler {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding: 0.05rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border: none;
+    border-radius: .25rem;
+}
+
+li.nav-item{
+    padding: 0 1em;
+}
+
+nav{
+    background-color: black;
+    z-index: 999;
+    width: 100%;
+}
+
+
+navbar-collapse{
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar-inverse .navbar-nav .active>.nav-link, .navbar-inverse .navbar-nav .nav-link.active, .navbar-inverse .navbar-nav .nav-link.open, .navbar-inverse .navbar-nav .open>.nav-link {
+    color: #fff;
+    border-bottom: solid 1px #fefc09;
+    
+}
+
+.navbar-brand {
+    position: relative;
+    display: inline-block;
+    vertical-align: center;
+    height: 32px;
+    width: 55px;
+    background: url(../images/Klarenz-logo.png) center -100px no-repeat;
+    background-size: contain;
+    animation: logo-in 1s ease 1s forwards;
+}
+
+.navbar-brand:hover {
+    animation: logo-out 1s ease 0s;
+}
+
+.navbar-brand span {
+    background: url(../images/letter-k.png) center center no-repeat;
+    background-size: contain;
+    width: 80%;
+    animation: logoInit-out 1s ease 1s forwards;
+}
+
+.navbar-brand:hover span {
+    animation: logoInit-in 1s ease 0s;
+}
+
+
+@keyframes logoInit-in{
+0% {
+    background-position: center 100px;
+}
+
+100% {
+    background-position: center 0;
+}
+}
+
+@keyframes logoInit-out{
+0% {
+    background-position: center 0;
+}
+
+100% {
+    background-position: center 100px;
+}
+}
+
+@keyframes logo-in{
+0% {
+    background-position: center -100px;
+}
+
+100% {
+    background-position: center 0;
+} 
+}
+
+@keyframes logo-out{
+0% {
+    background-position: center 0;
+}
+
+100% {
+    background-position: center -100px;
+}   
+}
+
+
+.navbar-brand {
+    color: #fff;
+    width: 90px;
+    margin-top: 0.7em;
+    height: 51px;
+    position: absolute;
+}
+
+.navbar-brand span {
+    position: absolute;
+    width: 90px;
+    left: 0px;
+}
+
+span {
+    color: #fff;
+    width: 90px;
+    height: 24px;
+    top: -2px;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(254, 252, 9);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(254, 252, 9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.collapse.show {
+    display: block;
+    position: absolute;
+    top: 51px;
+    left: 30px !important;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+    color: white;
+    text-transform: uppercase;
+}
+
+/*Termina Nav*/
+
+/*Comienza Carrusel*/
+#carrusel{
+    background-color: white;
+    width: 100vw;
+    margin: auto;
+    padding: 3em 0;
+}
+
+#carrusel-black{
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    padding: 3em 0;
+}
+
+#carrusel-large{
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 4em;
+}
+
+/*Termina Carrusel*/
+
+/*Comienza grayscale*/
+.grayscale{
+    transition: all 0.5s ease;
+    opacity: 0.2;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+
+.grayscale:hover{
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+/*Termina grayscale*/
+.btn-round{
+    background-color: #fefc09;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    margin: auto
+}
+
+.next-icon {
+    margin-left: 3px;
+    padding-top: 5px;
+    width: 75%;
+}
+
+.btn-square {
+    width: 100%;
+    height: 80px;
+    font-family: 'Futura LT W01 Heavy',Futura,Helvetica,Arial,sans-serif;
+    color: black;
+    letter-spacing: .2em;
+    font-size: 14px;
+    line-height: 65px;
+    text-transform: uppercase;
+    background: #fefc09;
+    transition: all .3s ease;
+    border-radius: 0;
+}
+
+.btn-square:hover, .btn-square:focus , .btn-square:hover:focus, .btn-square:visited  {
+    color: #fefc09;
+    background-color:black;
+    border: 1px solid #fefc09;
+}
+
+
+
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    font-family: 'Futura LT W01 Heavy',Futura,Helvetica,Arial,sans-serif;
+    color: black;
+    letter-spacing: .2em;
+    font-size: 14px;
+    line-height: 65px;
+    text-transform: uppercase;
+    background-color:#fefc09;
+    transition: all .3s ease;
+    border-radius: 100%;
+}
+
+.btn-circle:hover {
+    color: #fefc09;
+    background-color: rgba(254, 252, 9, 0.3);
+}
+
+/*Comienza botones expertise*/
+.fixed-1{
+    position: relative;
+    top: -21em;
+    left: 11em;
+}
+
+.text-fixed-1 {
+    font-size: 12px;
+    position: absolute;
+    left: -13em;
+    top: 0em;
+    line-height: 3;
+    color: rgba(254, 252, 9, 1);
+}
+
+.text-fixed-1:hover {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+
+
+.fixed-2{
+    position: relative;
+    left: 44em;
+    top: -21em;
+}
+
+.text-fixed-2 {
+    font-size: 12px;
+    position: absolute;
+    left: 4em;
+    top: -1em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+.text-fixed-2:hover {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+/*Termina botones expertise*/
+
+.btn-square-negative {
+    width: 100%;
+    height: 80px;
+    font-family: 'Futura LT W01 Heavy',Futura,Helvetica,Arial,sans-serif;
+    color: darkgray;
+    letter-spacing: .2em;
+    font-size: 14px;
+    line-height: 65px;
+    text-transform: uppercase;
+    background-color: dimgray;
+    transition: all .3s ease;
+    border-radius: 0;
+}
+
+.btn-square-negative:hover, .btn-square-negative:focus , .btn-square-negative:hover:focus, .btn-square-negativevisited {
+    color: #fefc09 !important;
+    background-color: #3c3c3c;
+    border: none;
+    box-shadow: none;
+}
+
+#footer{
+    background-color: none;
+    margin-top: 1em;
+    padding: 3em 0;
+    width: 100%;
+    bottom: 0;
+}
+
+#texto-about{
+    padding: 4em 0 0 0;
+}
+
+#angle{
+    visibility: hidden;
+}
+
+#marcas{
+    padding: 4em 0 0 0;
+}
+
+#news-frases-big{
+    width: 100%;
+}
+
+#jobs{
+    width: 100%;
+    background-color: white;
+    padding: 4em 0 1em 0;
+}
+
+#expertise{
+    padding: 4em 0;
+    display: flex;
+    
+}
+
+.no-padding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#canvas1{
+    margin: 0 auto;
+    
+}
+
+#frase-contact {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    padding: 3em 0;
+    top: 3em;
+    margin-bottom: 3em;
+}
+
+#cuadro{
+    padding: 2em 1em;
+}
+
+#work-expertise{
+    margin-top: 4em;
+    margin-bottom: 0;
+    background-color: white;
+    width: 100%;
+    padding: 3em 0;
+}
+
+
+/*Comienza Colores*/
+#aqua{
+    background-color: #7fc7d4;
+    padding: 4em 2em ;
+}
+#aqua-light{
+    background-color: #d7e8ea;
+    padding: 4em 2em ;
+}
+#gray{
+    background-color: #8f9ea5;
+    padding: 4em 2em ;
+}
+
+#white{
+    background-color: white;
+    padding: 6em 2em 0 2em ;
+}
+/*Termina Colores*/
+
+/*Comienza Imágenes*/
+#carrusel-news-1{
+    background-image: url(../images/carrusel-news1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#carrusel-news-2{
+    background-image: url(../images/carrusel-news2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#carrusel-news-3{
+    background-image: url(../images/carrusel-news3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#frase1{
+    background-image: url(../images/about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 1em;
+    width: 100%;
+    color: white;
+    display: flex;
+    margin: 0;
+}
+
+#frase2{
+    background-image: url(../images/creativity.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 1em;
+    width: 100%;
+    color: white;
+    display: flex;
+    margin: 0;
+}
+
+#frase3{
+    background-image: url(../images/communication.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 1em;
+    width: 100%;
+    color: white;
+    display: flex;
+    margin: 0;
+}
+
+#frase4{
+    background-image: url(../images/tech.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 1em;
+    width: 100%;
+    color: white;
+    display: flex;
+    margin: 0;
+}
+
+#frase5{
+    background-image: url(../images/social.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 1em;
+    width: 100%;
+    color: white;
+    display: flex;
+    margin: 0;
+}
+
+#img-portafolio-1{
+    background-image: url(../images/portafolio1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#img-portafolio-2{
+    background-image: url(../images/portafolio2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#img-portafolio-3{
+    background-image: url(../images/portafolio3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#img-portafolio-4{
+    background-image: url(../images/portafolio4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#img-portafolio-5{
+    background-image: url(../images/portafolio5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#img-portafolio-6{
+    background-image: url(../images/portafolio6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#img-portafolio-7{
+    background-image: url(../images/portafolio7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#img-portafolio-8{
+    background-image: url(../images/portafolio8.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10em 0;
+    width: 100%;
+    margin: 0;
+}
+
+#img-carrers-1{
+    background-image: url(../images/blog1.png);
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 4em 2em;
+    color: transparent;
+    filter: grayscale(0);
+    transition: all .3s ease;
+}
+
+#img-carrers-2{
+    background-image: url(../images/blog2.png);
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 4em 2em ;
+    color: transparent;
+    filter: grayscale(0);
+    transition: all .3s ease;
+}
+
+#img-carrers-3{
+    background-image: url(../images/blog3.png);
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 4em 2em ;
+    color: transparent;
+    filter: grayscale(0);
+    transition: all .3s ease;
+}
+
+#img-carrers-4{
+    background-image: url(../images/blog4.png);
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 4em 2em ;
+    color: transparent;
+    filter: grayscale(0);
+    transition: all .3s ease;
+}
+
+#img-carrers-5{
+    color:black !important;
+    background-color: #fefc09;
+    width: 100%;
+    height: auto;
+    padding: 4em 2em;
+    transition: all .3s ease;
+}
+
+#img-carrers-6{
+    background-image: url(../images/blog1.png);
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 4em 2em ;
+    color: transparent;
+    filter: grayscale(0);
+    transition: all .3s ease;
+}
+
+#img-carrers-7{
+    background-image: url(../images/blog2.png);
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 4em 2em ;
+    color: transparent;
+    filter: grayscale(0);
+    transition: all .3s ease;
+}
+
+#img-carrers-8{
+    background-image: url(../images/blog3.png);
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 4em 2em ;
+    color: transparent;
+    filter: grayscale(0);
+    transition: all .3s ease;
+}
+
+#img-carrers-1:hover {
+    filter: grayscale(100%);
+    color: white;
+}
+
+#img-carrers-2:hover {
+    filter: grayscale(100%);
+    color: white;
+}
+
+#img-carrers-3:hover {
+    filter: grayscale(100%);
+    color: white;
+}
+
+#img-carrers-4:hover {
+    filter: grayscale(100%);
+    color: white;
+}
+
+#img-carrers-5:hover {
+    color: #fefc09 !important;
+    background-color: black;
+}
+
+#img-carrers-6:hover {
+    filter: grayscale(100%);
+    color: white;
+}
+
+#img-carrers-7:hover {
+    filter: grayscale(100%);
+    color: white;
+}
+
+#img-carrers-8:hover {
+    filter: grayscale(100%);
+    color: white;
+}
+
+#about-1{
+    background-image: url(../images/about-about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 1em;
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+
+#about-2{
+    background-image: url(../images/about-philosophy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 1em;
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+
+#about-3{
+    background-image: url(../images/about-expertise.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 1em;
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+
+#about-4{
+    background-image: url(../images/about-wayofwork.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 1em;
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+    body{
+    width: 100%;
+    margin: auto;
+    font-family: font36377;
+    letter-spacing: 0.15em;
+    background-color: black;
+}
+    
+    #header {
+    position: relative;
+    max-width: 1200px;
+    padding-top: 40px;
+    top: 40px;
+    padding: 0 100px;
+    margin: auto;
+    background: #000;
+    margin-bottom: 5em;
+    
+}
+    #portafolio{
+    max-width: 1200px;
+    margin: auto;
+}
+    
+    #carrusel{
+    background-color: white;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+    
+    #mapa{
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-width: 1200px !important;
+    top: -10em;
+    margin: auto;
+    z-index: -1;
+}
+    
+    #carrusel-large{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+    
+    #frases-big{
+    background-color: #e5e5e1;
+    width: 100%;
+    margin: auto;
+    margin-top: -30px;
+    max-width: 1000px;
+}
+    
+    #about-frases-big{
+    background-color: #e5e5e1;
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+}
+    
+    #contacto-cuadro{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+}
+    
+    #contacto-cuadro2 {
+    background-color: #e5e5e1;
+    padding: 2em 2em;
+    width: 100%;
+    top: -10em;
+    margin: auto;
+    max-width: 1160px;
+    position: relative;
+}
+    
+    #news-frases-big{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+    
+    #jobs{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto; 
+}
+    
+    #carrers-frases-big{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;    
+}
+    
+    #footer{
+    background-color: #202123;
+    margin-top: 4em;
+    padding: 3em 0;
+    width: 100%;
+    bottom: 0;
+}
+    
+/*Comienza botones expertise*/
+    #all-canvas{
+    width: 100%;
+    padding: 4em 0;
+    margin-top: 4em;
+    margin-bottom: 8em;
+    z-index: 1;
+    margin: auto;
+}
+    
+    #all-canvas-2{
+    width: 100%;
+    padding: 4em 0;
+    margin-top: 4em;
+    margin-bottom: 8em;
+    z-index: 1;
+    margin: auto;
+}
+    
+    
+    .text-fixed-1 {
+    font-size: 12px;
+    position: absolute;
+    left: -9em;
+    top: 0.7em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-1:hover:focus {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+    
+    .text-fixed-2 {
+    font-size: 12px;
+    position: absolute;
+    left: 4em;
+    top: 0.5em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-2:hover:focus {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+    
+    .text-fixed-3 {
+    font-size: 12px;
+    position: absolute;
+    left: -1.7em;
+    top: 4em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-3:hover, .text-fixed-3:hover:focus {
+    color: rgba(254, 252, 9, 0.3) !important;
+    text-decoration: none;
+}
+    
+    .text-fixed-4 {
+    font-size: 12px;
+    position: absolute;
+    left: -3em;
+    top: -2.5em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-4:hover, .text-fixed-4:hover:focus {
+    color: rgba(254, 252, 9, 0.3) !important;
+    text-decoration: none;
+}
+    
+    .text-fixed-5 {
+    font-size: 12px;
+    position: absolute;
+    left: -11em;
+    top: 0.7em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-5:hover, .text-fixed-5:hover:focus {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+    
+    .fixed-1 {
+    position: relative;
+    top: -21em;
+    left: 20em;
+}
+
+    .fixed-2 {
+    position: relative;
+    left: 53em;
+    top: -21em;
+}
+
+    .fixed-3 {
+    position: relative;
+    top: -33em;
+    left: 18em;
+}
+    
+    .fixed-4 {
+    position: relative;
+    top: -33em;
+    left: 42em;
+}
+    
+    .fixed-5 {
+    position: relative;
+    top: -9em;
+    left: 11em;
+}
+    
+    .fixed-6 {
+    position: relative;
+    top: -9em;
+    left: 35em;
+}
+    
+    .fixed-7 {
+    position: relative;
+    top: -2em;
+    left: 18.5em;
+}
+    
+    .fixed-8 {
+    position: relative;
+    top: -39em;
+    left: 15.2em;
+}
+    
+    
+/*Termina botones expertise*/
+    
+    
+    /*Comienza Nav*/
+    .navbar-brand {
+    color: #fff;
+    width: 90px;
+    margin-top: 10px;
+    height: 51px;
+    position: absolute;
+}
+    
+    .navbar{
+    padding-left: 7em;
+}
+    
+    nav{
+        height: 90px;
+        background-color:#202123 ;
+}
+    
+    .navbar-nav {
+    padding-left: 120px;
+}
+    
+    .collapse.show {
+    display: block;
+    position: relative;
+    top: 4px;
+    left: -20px;
+}
+    /*Termina Nav*/
+    
+   /*Comienza Fonts*/
+    h1.header {
+        font-size: 4em;
+        letter-spacing: .20em;
+        color: white;
+        font-weight: bold;
+    }
+    
+    h2{
+    font-size: 1.7em;
+    letter-spacing: .20em;
+    font-weight: lighter;
+}
+
+    p.caption{
+        color: white;
+        font-weight: 400;
+        letter-spacing: .4em;
+        font-size: 10px;
+        line-height: 1.6;
+        text-transform: uppercase;
+    }
+    
+    p.caption-black{
+        color: black;
+        font-weight: 400;
+        letter-spacing: .4em;
+        font-size: 10px;
+        line-height: 1.6;
+        text-transform: uppercase;
+    }
+
+    /*Comienza Header*/
+    .row-padding{
+        padding-bottom: 2em;
+    }  
+
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    body{
+    width: 100%;
+    margin: auto;
+    font-family: font36377;
+    letter-spacing: 0.15em;
+    background-color: black;
+}
+    
+    #header {
+    position: relative;
+    max-width: 767px;
+    width: 100%;
+    padding-top: 40px;
+    top: 40px;
+    margin: auto;
+    background: #000;
+    margin-bottom: 5em;
+}
+    
+    #portafolio{
+    max-width: 767px;
+    margin: auto;
+}
+    
+    #carrusel{
+    background-color: white;
+    max-width: 767px;
+    width: 100%;
+    margin: auto;
+}
+    
+    #carrusel-large{
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+    
+    #frases-big{
+    background-color: #e5e5e1;
+    width: 100%;
+    margin: auto;
+    max-width: 720px;
+    margin-top: -30px;
+}
+    
+    #about-frases-big{
+    background-color: #e5e5e1;
+    width: 100%;
+    margin: auto;
+    max-width: 720px;
+}
+    
+    #news-frases-big{
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+}
+    
+    #jobs{
+    width: 100%;
+    max-width: 720px;
+    margin: auto; 
+}
+    
+    #carrers-frases-big{
+    width: 100%;
+    max-width: 720px;
+    margin: auto;    
+}
+    
+    #contacto-cuadro{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    max-width: 720px;
+}
+    
+    #contacto-cuadro2{
+    background-color: #e5e5e1;
+    padding: 2em 2em;
+    width: 100%;
+    margin: auto;
+    max-width: 720px;
+}
+    
+    #mapa{
+    height: auto;
+    width: 100% !important;
+    max-width: 720px !important;
+    margin: auto;
+    z-index: 1;
+    padding: 0 !important;
+}
+    
+    #carrusel-news{
+    background-color: white;
+    width: 100%;
+    max-width: 720px;
+}
+    
+    #footer{
+    background-color: #202123;
+    margin-top: 3em;
+    padding: 3em 0;
+    width: 100%;
+    bottom: 0;
+}
+    
+/*Comienza botones expertise*/
+    #all-canvas{
+    width: 100%;
+    padding: 4em 0;
+    margin-top: 4em;
+    margin-bottom: 8em;
+    z-index: 1;
+    margin: auto;
+}
+    
+    #all-canvas-2{
+    width: 100%;
+    padding: 4em 0;
+    margin-top: 4em;
+    margin-bottom: 8em;
+    z-index: 1;
+    margin: auto;
+}
+    
+    
+    .text-fixed-1 {
+    font-size: 12px;
+    position: absolute;
+    left: -9em;
+    top: 0.5em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-1:hover:focus {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+    
+    .text-fixed-2 {
+    font-size: 12px;
+    position: absolute;
+    left: 4em;
+    top: 0.5em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-2:hover:focus {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+    
+    .text-fixed-3 {
+    font-size: 12px;
+    position: absolute;
+    left: -1.7em;
+    top: 4em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-3:hover, .text-fixed-3:hover:focus {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+    
+    .text-fixed-4 {
+    font-size: 12px;
+    position: absolute;
+    left: -2.8em;
+    top: -2.5em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-4:hover, .text-fixed-4:hover:focus {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+    
+    .text-fixed-5 {
+    font-size: 12px;
+    position: absolute;
+    left: -11em;
+    top: 0.5em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-5:hover, .text-fixed-5:hover:focus {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+    
+    .fixed-1 {
+    position: relative;
+    top: -21em;
+    left: 15em;
+}
+
+    .fixed-2 {
+    position: relative;
+    left: 48.5em;
+    top: -21em;
+}
+
+    .fixed-3 {
+    position: relative;
+    top: -31em;
+    left: 11.5em;
+}
+    
+    .fixed-4 {
+    position: relative;
+    top: -31em;
+    left: 39em;
+}
+    
+    .fixed-5 {
+    position: relative;
+    top: -11em;
+    left: 4.5em;
+}
+    
+    .fixed-6 {
+    position: relative;
+    top: -11em;
+    left: 32.5em;
+}
+    
+    .fixed-7 {
+    position: relative;
+    top: -2em;
+    left: 13.5em;
+}
+    
+    .fixed-8 {
+    position: relative;
+    top: -39em;
+    left: 10.5em;
+}
+/*Termina botones expertise*/
+    
+    /*Comienza Nav*/
+    
+
+    .navbar {
+    padding-left: 5em;
+    padding-top: 2em;
+}
+    
+    nav{
+        height: 90px;
+        background-color:black;
+}
+    
+    .navbar-nav {
+    padding-left: 120px;
+}
+    
+    a.nav-link {
+    font-size: 0.85em;
+    padding-top: 0;
+    margin-top: 0;
+}
+    
+    .navbar-brand {
+    color: #fff;
+    width: 90px;
+    margin-top: 5px;
+    height: 51px;
+    position: absolute;
+}
+    
+    .collapse.show {
+    display: block;
+    position: absolute;
+    top: 50px;
+    padding-left: 29px;
+    padding-bottom: 20px;
+    left: 0px !important;
+    background-color: black;
+    width: 100vw;
+}
+    /*Termina Nav*/
+    
+   /*Comienza Fonts*/
+    h1.header {
+        font-size: 3em;
+        letter-spacing: .20em;
+        color: white;
+        font-weight: bold;
+    }
+    
+    h1.light {
+        font-size: 2em;
+        letter-spacing: .20em;
+        color: white;
+        font-weight: bold;
+}
+    
+    h2{
+    font-size: 1.4em;
+    letter-spacing: .20em;
+    font-weight: lighter;
+}
+
+    p.caption{
+        color: white;
+        font-weight: 400;
+        letter-spacing: .4em;
+        font-size: 10px;
+        line-height: 1.6;
+        text-transform: uppercase;
+    }
+    
+    p.caption-black{
+        color: black;
+        font-weight: 400;
+        letter-spacing: .4em;
+        font-size: 10px;
+        line-height: 1.6;
+        text-transform: uppercase;
+    }
+
+    /*Comienza Header*/
+    .row-padding{
+        padding-bottom: 2em;
+    }     
+
+}
+/*// Medium devices (tablets, 768px and up)*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+    body{
+    width: 100%;
+    margin: auto;
+    font-family: font36377;
+    letter-spacing: 0.15em;
+    background-color: black;
+}
+    
+    #header {
+    position: relative;
+    max-width: 767px;
+    width: 100%;
+    padding-top: 40px;
+    top: 100px;
+    margin: auto;
+    background: #000;
+    margin-bottom: 10em;
+}
+    
+    #expertise{
+    padding: 4em 0;
+    top: 5em;
+    position: relative;
+    padding: 4em 0;
+    display: flex;
+    margin-bottom: 5em;
+    
+}
+    
+    .no-padding{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+    
+    #carrusel-black{
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    padding: 3em 0;
+    top: 5em;
+    margin-bottom: 5em;
+    position: relative;
+}
+    
+    #portafolio{
+    max-width: 767px;
+    margin: auto;
+}
+    
+    #carrusel{
+    background-color: white;
+    max-width: 767px;
+    width: 100%;
+    margin: auto;
+}
+    
+    #carrusel-large{
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 7em;
+    top: 5em;
+    position: relative;
+}
+    
+    #frases-big{
+    background-color: #e5e5e1;
+    width: 100%;
+    margin: auto;
+    max-width: 720px;
+    margin-top: -30px;
+}
+    
+    #about-frases-big{
+    background-color: #e5e5e1;
+    width: 100%;
+    margin: auto;
+    max-width: 720px;
+}
+    
+    #news-frases-big{
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+}
+    
+    #jobs{
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    top: 5em;
+    margin-bottom: 5em;
+    position: relative;
+}
+    
+    #carrers-frases-big{
+    width: 100%;
+    max-width: 720px;
+    margin: auto;    
+}
+    
+    #contacto-cuadro{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    max-width: 720px;
+}
+    
+    #contacto-cuadro2{
+    background-color: #e5e5e1;
+    padding: 2em 2em;
+    width: 100%;
+    margin: auto;
+    max-width: 720px;
+}
+    
+    #mapa{
+    height: auto;
+    width: 100% !important;
+    max-width: 720px !important;
+    margin: auto;
+    z-index: 1;
+    padding: 0 !important;
+}
+    
+    #carrusel-news{
+    background-color: white;
+    width: 100%;
+    max-width: 720px;
+}
+    
+    #footer{
+    background-color: #202123;
+    margin-top: 3em;
+    padding: 3em 0;
+    width: 100%;
+    bottom: 0;
+}
+    
+/*Comienza botones expertise*/
+    #all-canvas{
+    width: 100%;
+    padding: 4em 0;
+    margin-top: 4em;
+    margin-bottom: 8em;
+    z-index: 1;
+    margin: auto;
+}
+    
+    #all-canvas-2{
+    width: 100%;
+    padding: 4em 0;
+    margin-top: 4em;
+    margin-bottom: 8em;
+    z-index: 1;
+    margin: auto;
+}
+    
+    
+    .text-fixed-1 {
+    font-size: 12px;
+    position: absolute;
+    left: -9em;
+    top: 0.5em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-1:hover:focus {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+    
+    .text-fixed-2 {
+    font-size: 12px;
+    position: absolute;
+    left: 4em;
+    top: 0.5em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-2:hover:focus {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+    
+    .text-fixed-3 {
+    font-size: 12px;
+    position: absolute;
+    left: -1.7em;
+    top: 4em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-3:hover, .text-fixed-3:hover:focus {
+    color: rgba(254, 252, 9, 0.3) !important;
+    text-decoration: none;
+}
+    
+    .text-fixed-4 {
+    font-size: 12px;
+    position: absolute;
+    left: -2.8em;
+    top: -2.5em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-4:hover, .text-fixed-4:hover:focus {
+    color: rgba(254, 252, 9, 0.3) !important;
+    text-decoration: none;
+}
+    
+    .text-fixed-5 {
+    font-size: 12px;
+    position: absolute;
+    left: -11em;
+    top: 0.5em;
+    line-height: 2;
+    color: rgba(254, 252, 9, 1);
+}
+
+    .text-fixed-5:hover, .text-fixed-5:hover:focus {
+    color: rgba(254, 252, 9, 0.3);
+    text-decoration: none;
+}
+    
+    .fixed-1 {
+    position: relative;
+    top: -21em;
+    left: 7em;
+}
+
+    .fixed-2 {
+    position: relative;
+    left: 39em;
+    top: -21em;
+}
+
+    .fixed-3 {
+    position: relative;
+    top: -31em;
+    left: 3em;
+}
+    
+    .fixed-4 {
+    position: relative;
+    top: -31em;
+    left: 30em;
+}
+    
+    .fixed-5 {
+    position: relative;
+    top: -11em;
+    left: -4em;
+}
+    
+    .fixed-6 {
+    position: relative;
+    top: -11em;
+    left: 24em;
+}
+    
+    .fixed-7 {
+    position: relative;
+    top: -2em;
+    left: 4.5em;
+}
+    
+    .fixed-8 {
+    position: relative;
+    top: -39em;
+    left: 1.5em;
+}
+/*Termina botones expertise*/
+    
+
+/* responsive nav stacked liked 3.x */
+@media(max-width:48em) {
+    .navbar .navbar-nav>.nav-item {
+        float: none;
+        margin-left: .1rem;
+    }
+    .navbar .navbar-nav {
+        float:none !important;
+    }
+    .navbar .collapse.in, .navbar .collapsing  {
+        clear:both;
+    }
+}
+
+/*Empieza Hamburger*/ 
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler span {
+   display: block;
+   background-color: #fefc09;
+   height: 2px;
+   width: 20px;
+   margin-top: 4px;
+   margin-bottom: 4px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   position: relative;
+   left: 0;
+   opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+   -webkit-transition: .35s ease-in-out;
+   -moz-transition: .35s ease-in-out;
+   -o-transition: .35s ease-in-out;
+   transition: .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 13px;
+    top: 14px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}    
+/*Termina Hamburger*/ 
+    
+/*Comienza Nav*/
+    .navbar {
+    padding-left: 5em;
+    padding-top: 2em;
+}
+    
+    nav{
+        height: 90px;
+        background-color:black;
+}
+    
+    .navbar-nav {
+    padding-left: 0;
+}
+     
+    a.nav-link {
+    width: 40%;
+    margin: auto;
+    padding-top: 1em;
+    /* margin-top: 0; */
+    font-size: 1.6em;
+    letter-spacing: 8px;
+}
+    
+    .navbar-brand {
+    color: #fff;
+    width: 90px;
+    margin-top: 0;
+    height: 51px;
+    position: absolute;
+}
+    
+    .navbar{
+    position: fixed;
+}
+    
+    .collapse.show {
+    display: block;
+    position: fixed;
+    top: 90px;
+    /* padding-left: 59px; */
+    /* padding-bottom: 20px; */
+    left: 0px !important;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+    /*Termina Nav*/
+    
+   /*Comienza Fonts*/
+    h1.header {
+        font-size: 3em;
+        letter-spacing: .20em;
+        color: white;
+        font-weight: bold;
+    }
+    
+    h1.light {
+        font-size: 2em;
+        letter-spacing: .20em;
+        color: white;
+        font-weight: bold;
+}
+    
+    h2{
+    font-size: 1.4em;
+    letter-spacing: .20em;
+    font-weight: lighter;
+}
+
+    p.caption{
+        color: white;
+        font-weight: 400;
+        letter-spacing: .4em;
+        font-size: 10px;
+        line-height: 1.6;
+        text-transform: uppercase;
+    }
+    
+    p.caption-black{
+        color: black;
+        font-weight: 400;
+        letter-spacing: .4em;
+        font-size: 10px;
+        line-height: 1.6;
+        text-transform: uppercase;
+    }
+
+    /*Comienza Header*/
+    .row-padding{
+        padding-bottom: 2em;
+    }     
+
+}
+/*// Medium devices (tablets, 768px and up)*/
+
+/*// Small devices (tablets, 768px and up)*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    
+    .mobile-wrap{
+        background-image: url(../images/mobile-header.png);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+    
+    body{
+    width: 100%;
+    margin: auto;
+    font-family: font36377;
+    letter-spacing: 0.15em;
+    background-color: black;
+}
+    
+    #header {
+    position: relative;
+    top: 5em;
+    padding: 3em;
+    margin: 0 7%;
+    background: #000;
+    margin-bottom: 7em;
+}
+    
+    #portafolio{
+    max-width: 480px;
+    margin: auto;
+}
+    
+    #carrusel{
+    background-color: white;
+    width: 100%;
+    padding: 4em 0;
+}
+    
+    #carrusel-large{
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+    
+    #carrusel-black {
+    background-color: black;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    padding: 3em 0;
+    top: 3em;
+}
+    
+    #news-frases-big{
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+}
+    
+    #jobs{
+    width: 100%;
+    max-width: 480px;
+    margin: auto; 
+}
+    
+    #carrers-frases-big{
+    width: 100%;
+    max-width: 480px;
+    margin: auto;    
+}
+    
+    #contacto-cuadro{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    max-width: 480px;
+}
+    
+    #contacto-cuadro2{
+    background-color: #e5e5e1;
+    padding: 2em 2em;
+    width: 100%;
+    margin: auto;
+    max-width: 480px;
+}
+    
+    #carrusel-news{
+    background-color: white;
+    width: 100%;
+    max-width: 480px;
+}
+    
+    #footer{
+    background-color: #202123;
+    margin-top: 3em;
+    padding: 3em 0;
+    width: 100%;
+    bottom: 0;
+}
+    
+    #white{
+    background-color: white;
+    padding: 4em 2em;
+}
+    
+    /*Comienza Nav*/
+    .navbar {
+    padding-left: 3em;
+    padding-top: 0.8em;
+}
+    
+    .navbar-brand {
+    color: #fff;
+    width: 90px;
+    margin-top: 0em;
+    height: 51px;
+    position: absolute;
+}
+    
+    a.nav-link {
+    width: 40%;
+    margin: auto;
+    padding-top: 1em;
+    /* margin-top: 0; */
+    font-size: 1.6em;
+    letter-spacing: 8px;
+}
+    
+    nav{
+        height: 50px;
+        background-color:black;
+}
+    
+    .navbar{
+    position: fixed;
+}
+    
+    .collapse.show {
+    display: block;
+    position: fixed;
+    top: 50px;
+    padding-left: 29px;
+    padding-bottom: 20px;
+    left: 0px !important;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+/*Termina Nav*/
+/*Empieza Hamburger*/ 
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler span {
+   display: block;
+   background-color: #fefc09;
+   height: 2px;
+   width: 20px;
+   margin-top: 4px;
+   margin-bottom: 4px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   position: relative;
+   left: 0;
+   opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+   -webkit-transition: .35s ease-in-out;
+   -moz-transition: .35s ease-in-out;
+   -o-transition: .35s ease-in-out;
+   transition: .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 13px;
+    top: 14px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}    
+/*Termina Hamburger*/
+
+
+    /*Comienza Fonts*/
+    h1.header {
+        font-size: 1.4em;
+        letter-spacing: .35em;
+        color: white;
+        font-weight: bold;
+}
+    
+    h1.light {
+        font-size: 1.4em;
+        letter-spacing: .20em;
+        color: white;
+        font-weight: bold;
+}
+    
+    h2{
+    font-size: 1.2em;
+    letter-spacing: .20em;
+    font-weight: lighter;
+}
+
+    p.caption{
+        color: white;
+        font-weight: 400;
+        letter-spacing: .4em;
+        font-size: 7px;
+        line-height: 1.6;
+        text-transform: uppercase;
+}
+    
+    p.caption-black{
+        color: black;
+        font-weight: 400;
+        letter-spacing: .4em;
+        font-size: 7px;
+        line-height: 1.6;
+        text-transform: uppercase;
+}
+
+    /*Comienza Header*/
+    .row-padding{
+        padding-bottom: 1.5em;
+}    
+
+}
+/*// Small devices (tablets, 768px and up)*/
+
+/*// Mobile devices (tablets, 768px and up)*/
+@media (max-width: 576px) {
+    
+    
+    
+    .mobile-wrap{
+        background-image: url(../images/mobile-header.png);
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        height: auto;
+        
+    }
+    
+    #header {
+    position: relative;
+    padding-top: 40px;
+    top: 5em;
+    margin: 0 7%;
+    background: #000;
+    /* margin-top: 5em; */
+    margin-bottom: 7em;
+}
+    
+    #carrusel{
+    background-color: white;
+    width: 100%;
+    padding: 4em 0;
+}
+    
+    #carrusel-black {
+    background-color: black;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    padding: 3em 0;
+    top: 3em;
+}
+    
+    #carrusel-large{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+    
+    #jobs{
+    width: 100%;
+    margin: auto; 
+}
+    
+    #carrers-frases-big{
+    width: 100%;
+    margin: auto;    
+}
+    
+    #contacto-cuadro{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+}
+    
+    #contacto-cuadro2{
+    background-color: #e5e5e1;
+    padding: 2em 2em;
+    width: 100%;
+    margin: auto;
+}
+    
+    #news-frases-big{
+    width: 100%;
+    margin: auto;
+}
+    
+    #portafolio{
+    width: 100%;
+    margin: auto;
+}
+    
+    #white{
+    background-color: white;
+    padding: 4em 2em;
+}
+    
+    /*Comienza Nav*/
+    .navbar {
+    padding-left: 2em;
+    padding-top: 0.8em;
+}
+    
+    .navbar-brand {
+    color: #fff;
+    width: 90px;
+    margin-top: 0.1em;
+    height: 51px;
+    position: absolute;
+}
+    
+    a.nav-link {
+    width: 60%;
+    margin: auto;
+    padding-top: 1em;
+    /* margin-top: 0; */
+    font-size: 1.4em;
+    letter-spacing: 8px;
+}
+    
+    .navbar{
+    position: fixed;
+}
+    
+    nav{
+        height: 50px;
+        background-color:black;
+        z-index: 999;
+        width: 100%;
+}
+    
+    .navbar{
+    position: fixed;
+}
+    
+    .collapse.show {
+    display: block;
+    position: fixed;
+    top: 50px;
+    padding-left:0;
+    left: 0px !important;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+    /*Termina Nav*/
+/*Empieza Hamburger*/ 
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler span {
+   display: block;
+   background-color: #fefc09;
+   height: 2px;
+   width: 20px;
+   margin-top: 4px;
+   margin-bottom: 4px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   position: relative;
+   left: 0;
+   opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+   -webkit-transition: .35s ease-in-out;
+   -moz-transition: .35s ease-in-out;
+   -o-transition: .35s ease-in-out;
+   transition: .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 13px;
+    top: 14px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}    
+/*Termina Hamburger*/    
+  
+
+
+    /*Comienza Fonts*/
+    h1.header {
+        font-size: 1em;
+        letter-spacing: .35em;
+        color: white;
+        font-weight: bold;
+}
+    
+    h1.light {
+        font-size: 1em;
+        letter-spacing: .20em;
+        color: white;
+        font-weight: bold;
+}
+    
+    h2{
+    font-size: 1em;
+    letter-spacing: .20em;
+    font-weight: lighter;
+}
+
+    p.caption{
+        color: white;
+        font-weight: 400;
+        letter-spacing: .4em;
+        font-size: 7px;
+        line-height: 1.6;
+        text-transform: uppercase;
+}
+
+    /*Comienza Header*/
+    .row-padding{
+        padding-bottom: 1.5em;
+}  
+
+}
+/*// Mobile devices (tablets, 768px and up)*/
